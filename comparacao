@@ -1,0 +1,8 @@
+names_a = open('teste.txt', 'r').read().split('\n')
+names_b = open('teste2.txt', 'r').read().split('\n')
+comparacao_a = set(names_a)
+comparacao_b = set(names_b)
+
+intersection = comparacao_b.difference(names_a)
+print(len(intersection))
+print(intersection)
